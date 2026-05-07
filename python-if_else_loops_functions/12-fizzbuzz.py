@@ -13,5 +13,4 @@ def fizzbuzz():
         else:
             myArray.append(i)
     result = " ".join(map(str, myArray))
-    result = result.strip()
-    print(result)
+    print(result, end="")
