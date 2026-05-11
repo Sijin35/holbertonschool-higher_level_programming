@@ -2,5 +2,5 @@
 
 def no_c(my_string):
 
-    new = my_string.strip("c, C")
+    new = "".join(i for i in my_string if i not in "cC")
     return new
