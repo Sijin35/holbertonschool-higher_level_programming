@@ -2,8 +2,8 @@
 
 def search_replace(my_list, search, replace):
     new = my_list[:]
-    for i in my_list:
-        if i == search:
+    for i, v in enumerate(my_list):
+        if v == search:
            new[i] = replace 
     return new
 
