@@ -6,5 +6,5 @@ def search_replace(my_list, search, replace):
         if v == search:
             new[i] = replace
     return new
-# new = [replace if i == search else i for i in my_list] 
+# new = [replace if i == search else i for i in my_list]
 # List comprehension if want to use
