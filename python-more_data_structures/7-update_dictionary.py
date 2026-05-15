@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 def update_dictionary(a_dictionary, key, value):
+    if a_dictionary == {}:
+        a_dictionary.update({key: value})
     li = list(a_dictionary.keys())
     for i in li:
         if i == key:
