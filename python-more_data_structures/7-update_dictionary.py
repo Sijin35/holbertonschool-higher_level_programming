@@ -9,4 +9,4 @@ def update_dictionary(a_dictionary, key, value):
             a_dictionary[i] = value
         else:
             a_dictionary.update({key: value})
-    return(a_dictionary)
+    return (a_dictionary)
