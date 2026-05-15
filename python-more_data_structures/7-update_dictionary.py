@@ -1,19 +1,19 @@
 #!/usr/bin/python3
 
 def update_dictionary(a_dictionary, key, value):
-   # Pythonic coding apparently
+    # Pythonic coding apparently
     a_dictionary[key] = value
     return (a_dictionary)
 
     # C way apparently
     # if a_dictionary == {}:
-   #     a_dictionary.update({key: value})
+    #     a_dictionary.update({key: value})
 
-   # li = list(a_dictionary.keys())
+    # li = list(a_dictionary.keys())
 
-   # for i in li:
-   #     if i == key:
-   #         a_dictionary[i] = value
-   #     else:
-   #         a_dictionary.update({key: value})
-   # return (a_dictionary)
+    # for i in li:
+    #     if i == key:
+    #         a_dictionary[i] = value
+    #     else:
+    #         a_dictionary.update({key: value})
+    # return (a_dictionary)
