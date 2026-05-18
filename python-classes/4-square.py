@@ -7,24 +7,26 @@ class Square:
     """
 
     def __init__(self, size=0):
-        """Initializes a square with private attribute size"""
+        """Initializes a square with attribute size which will be made private
+        using the setter"""
 
-        self.__size = size
+        self.size = size
 
-    @size.retrieve
+    @property
     def size(self):
         """Retrieves the size of the square."""
 
         return self.__size
 
-    @size.set
+    @size.setter
     def size(self, value):
         """Sets the size of the square with type/value verification"""
 
-        if type(size) is not int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
-        if size < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
+        self.__size = value
 
     def area(self):
         """Returns the current square area"""
