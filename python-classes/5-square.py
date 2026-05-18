@@ -2,10 +2,7 @@
 """Defines a square module."""
 
 class Square:
-    """Represents a square with private attribute size and type/value verification
-    which returns the current square area and prints the square with character #
-    in stdout.
-    """
+    """Represents a square with size validation and printing ability."""
 
     def __init__(self, size=0):
         """Initializes a square with attribute size which will be made private
@@ -40,5 +37,5 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(1, self.__size):
+            for i in range(self.__size):
                 print("#" * self.__size)
