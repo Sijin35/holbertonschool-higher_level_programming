@@ -11,15 +11,15 @@ class Square:
     Represents a square with size validation and printing ability.
     """
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
 
         Initializes a square with attribute size which will be made private
         using the setter.
         """
 
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -59,8 +59,7 @@ class Square:
         Sets the position of the square to be printed.
         """
 
-        self.__position = ()
-        if self.__position[0] < 0 and self.__position[1] < 0:
+        if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
