@@ -24,7 +24,7 @@ class Square:
     @property
     def size(self):
         """
- 
+
         Retrieves the size of the square.
         """
 
