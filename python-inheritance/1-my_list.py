@@ -8,4 +8,4 @@ class MyList(list):
     def print_sorted(self):
         """Public instance method that prints sorted list """
 
-        return sorted(self)
+        print(sorted(self))
