@@ -20,6 +20,8 @@ function use through Class:
 [1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
 expected errors based on given condtions:
 
@@ -35,6 +37,17 @@ all elements of list must be integers
 [1, 3.1, 2, 3, 5]
 >>> my_list.print_sorted()
 [1, 2, 3, 3.1, 5]
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(-5)
+>>> my_list.append(-4)
+>>> my_list.append(-8)
+>>> my_list.append(-6)
+>>> print(my_list)
+[-1, -5, -4, -8, -6]
+>>> my_list.print_sorted()
+[-8, -6, -5, -4, -1]
 
 when list is empty
 
