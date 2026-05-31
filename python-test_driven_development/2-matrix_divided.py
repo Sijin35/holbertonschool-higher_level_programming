@@ -22,7 +22,7 @@ def matrix_divided(matrix, div):
             if not isinstance(j, (int, float)):
                 raise TypeError(
                     "matrix must be a matrix (list of lists)"
-                    "of integers/floats"
+                    " of integers/floats"
                 )
             res = j / div
             row.append(round(res, 2))
