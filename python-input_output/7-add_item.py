@@ -10,7 +10,7 @@ new = sys.argv[1:]
 
 try:
     old = load_file("add_item.json")
-except:
+except FileNotFoundError:
     old = []
 
 updated = old + new
