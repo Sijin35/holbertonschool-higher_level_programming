@@ -6,6 +6,7 @@ from flask import request
 
 
 app = Flask(__name__)
+users = {}
 
 @app.route("/")
 def home():
@@ -13,7 +14,7 @@ def home():
 
 @app.route("/data")
 def json_return():
-    return jsonify({"users": list(users.keys())})
+    return jsonify(list(users.keys()))
 
 @app.route("/status")
 def status():
