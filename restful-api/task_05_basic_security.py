@@ -25,11 +25,6 @@ users = {
             "role": "admin"}
         }
 
-tokens = {
-        "abc123token": "john",
-        "123abctoken": "jane"
-        }
-
 
 @auth.verify_password
 def verify_password(username, password):
@@ -48,12 +43,13 @@ def basic_protected():
 @app.route("/login", methods=['POST'])
 def login():
     data = request.get_json()
-    user = users.get(username)
 
     username = data["username"]
     password = data["password"]
 
-    if user in users and check_password_hash(user["password"], password):
+    user = users.get(username)
+
+    if user and check_password_hash(user["password"], password):
         access_token = create_access_token(identity=username)
         return jsonify(access_token=access_token)
 
