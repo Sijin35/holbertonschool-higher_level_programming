@@ -14,14 +14,14 @@ app.config["JWT_SECRET_KEY"] = "your-secret"
 jwt = JWTManager(app)
 
 users = {
-        "john": {
-            "username": "john",
-            "password": generate_password_hash("hello"),
+        "user1": {
+            "username": "user1",
+            "password": generate_password_hash("password"),
             "role": "user"},
 
-        "jane": {
-            "username": "jane",
-            "password": generate_password_hash("bye"),
+        "admin1": {
+            "username": "admin1",
+            "password": generate_password_hash("password"),
             "role": "admin"}
         }
 
