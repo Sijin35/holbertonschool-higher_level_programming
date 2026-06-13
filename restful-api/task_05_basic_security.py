@@ -69,7 +69,7 @@ def is_admin():
     username = get_jwt_identity()
     if users[username]["role"] == "admin":
         return "Admin Access: Granted"
-    return jsonify({"error": "Access Denied"}), 403
+    return jsonify({"error": "Access access required"}), 403
 
 
 @jwt.unauthorized_loader
