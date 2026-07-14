@@ -1,0 +1,1 @@
+# Javascript is not Java but why add script to Java
