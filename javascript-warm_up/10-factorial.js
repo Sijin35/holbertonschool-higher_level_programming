@@ -1,14 +1,18 @@
 #!/usr/bin/node
 
 const num = parseInt(process.argv[2]);
-let fac = 1;
-
-for (let i = 1; i <= num; i++) {
-  fac *= i;
-}
+let fac;
 
 if (Number.isNaN(num)) {
-  fac = 1;
+    fac = 1;
 }
 
-console.log(fac);
+function factorial(num) {
+    if (num === 1) {
+        return 1;
+    }
+    
+    return num * factorial(num - 1);
+}
+
+console.log(factorial(num));
