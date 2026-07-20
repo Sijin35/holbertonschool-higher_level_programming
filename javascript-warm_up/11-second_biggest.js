@@ -5,6 +5,6 @@ const num = process.argv.slice(2);
 if (num.length <= 1){
   console.log(0);
 } else {
-  num.sort((a, b) => a - b);
-  console.log(num);
+  num.sort((a, b) => b - a);
+  console.log(num[1]);
 }
