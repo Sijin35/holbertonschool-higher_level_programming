@@ -1,2 +1,1 @@
-const h = document.querySelector('header');
-h.style.color='red';
+document.querySelector('header').style.color='red';
