@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const h = document.querySelector('header');
 const r = document.querySelector('#red_header');
 

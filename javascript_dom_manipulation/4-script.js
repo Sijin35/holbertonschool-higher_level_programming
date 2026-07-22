@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const target = document.querySelector('.my_list');
 const a = document.querySelector('#add_item');
 

@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const u = document.querySelector('#update_header');
 const h = document.querySelector('header');
 
