@@ -5,7 +5,7 @@ async function getName() {
   const data = await response.json();
 
   document.querySelector('#character').innerHTML = data.name;
-}
+};
 
 getName()
-  .catch(error => {console.log(error)});
+  .catch(error => {console.log('error')});
